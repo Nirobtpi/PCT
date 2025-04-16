@@ -17,7 +17,7 @@ class Discount{
 $discount=new Discount(1000,30);
 echo $discount->discountD();
 
-abstract class Name{
+class Name{
     public $name;
     function name($name){
         $this->name=$name;
