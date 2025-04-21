@@ -46,6 +46,39 @@ class Nirob1{
 }
 $nirob1=new Nirob1();
 $nirob1->SayHello();
+echo "\n";
+
+class MyFather{
+
+  private  function jomi(){
+        echo "This Is Jomi";
+    }
+   protected function Bike(){
+        echo "This Is Father Bike";
+    }
+
+    function murgi(){
+        echo "This Is Murgi";
+    }
+
+}
+class HisSon extends MyFather{
+    function Bike(){
+        echo "This Is Son Bike";
+    }
+    
+}
+$son=new HisSon();
+
+echo "\n";
+$son->Bike();
+
+for($i=1;$i<=10;$i++){
+
+    for($j=1;$j<=$i;$j++){
+         echo "$i x $j = " . ($i * $j) . "\n";
+    }
+}
 
 
 ?>
